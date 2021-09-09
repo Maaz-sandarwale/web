@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	.button {background-color: #008CBA;
+  		width: 90px;
+  		height: 40px;}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h3 style="text-align: center;font-weight: bold;">Popover Example</h3>
+  <br>
+  <br>
+  <div style="text-align:center;">
+  <button  class="button" data-toggle="popover" title="Followed!!!!!!" data-content="You have followed this person">Follow
+  </button>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+</body>
+</html>
